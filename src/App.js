@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+
+import Main from "./page/Main/Main";
+import Qa from "./page/Qa/Qa";
+import CompanyIntro from "./page/Intro/CompanyIntro";
+import Faq from "./page/Faq/Faq";
+import Board from "./page/Board/Board";
+import BusinessIntro from "./page/Intro/BusinessIntro";
 
 function App() {
+  let RouteWrap = BrowserRouter;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouteWrap>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/Qa" element={<Qa />} />
+          <Route path="/CompanyIntro" element={<CompanyIntro />} />
+          <Route path="/Faq" element={<Faq />} />
+          <Route path="/Board" element={<Board />} />
+          <Route path="/BusinessIntro" element={<BusinessIntro />} />
+        </Routes>
+      </RouteWrap>
     </div>
   );
 }
