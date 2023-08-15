@@ -1,11 +1,12 @@
 import Header from "../../component/Header/Header";
+
 function Main() {
   return (
     <div id="main">
       <div>
         <Header />
       </div>
-      <div>
+      <div className="logo">
         회사상징 사진
       </div>
       <div>

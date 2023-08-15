@@ -1,5 +1,7 @@
 import Header from "../../component/Header/Header";
+import React, {useState }from "react";
 function Board() {
+  const [customerData,setCustomerData]=useState({});
   return (
     <div id="main">
       <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./header.css";
+import  logo from "../../dummy/logo.png";
 function Header() {
   const nav = useNavigate();
   return (
@@ -9,7 +10,7 @@ function Header() {
         <div className="d"
          onClick={() => {
             nav(`/`);
-          }}>회사로고</div>
+          }}><img alt="logo" src={logo} width="100px" /></div>
         <div
           className="d"
           onClick={() => {

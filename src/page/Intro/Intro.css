@@ -1,0 +1,14 @@
+/* CompanyIntro.js's css */
+
+.cia{
+    margin: 10px;
+    padding : 10px;
+    font-size: 20px;
+    width: calc(100% - 20px);
+
+    border-bottom: 2px solid #000000
+}
+
+.intro-wrap-content{
+    height:100%;
+}
