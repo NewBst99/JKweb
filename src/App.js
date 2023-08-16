@@ -7,6 +7,7 @@ import CompanyIntro from "./page/Intro/CompanyIntro";
 import Faq from "./page/Faq/Faq";
 import Board from "./page/Board/Board";
 import BusinessIntro from "./page/Intro/BusinessIntro";
+import Policy from "./page/Policy/Policy";
 
 function App() {
   let RouteWrap = BrowserRouter;
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Faq" element={<Faq />} />
           <Route path="/Board" element={<Board />} />
           <Route path="/BusinessIntro" element={<BusinessIntro />} />
+          <Route path="/Policy" element={<Policy />} />
         </Routes>
       </RouteWrap>
     </div>
