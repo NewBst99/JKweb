@@ -1,6 +1,8 @@
 import Header from "../../component/Header/Header";
 import "./Intro.css";
+import { useNavigate } from "react-router-dom";
 function CompanyIntro() {
+  const nav = useNavigate();
   return (
     <div id="main">
       <div>
@@ -12,7 +14,7 @@ function CompanyIntro() {
         <div className="cia">수출입 관련안내</div>
         <div className="cia">구매 대행 관련 안내</div>
         <div className="cia">통역/번역 관련 안내</div>
-        <div className="cia">문의 바로가기</div>
+        <div className="cia" onClick={()=>{nav(`/Qa`)}}>문의 바로가기</div>
         <div className="cia">회사 정보</div>
       </div>
     </div>

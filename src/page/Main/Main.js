@@ -1,6 +1,8 @@
 import Header from "../../component/Header/Header";
 import { useNavigate } from "react-router-dom";
 import "./Main.css"
+
+
 function Main() {
   const nav = useNavigate();
   return (
@@ -17,6 +19,7 @@ function Main() {
       >
         개인정보 보호 정책
       </div>
+
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.bt {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #ff7f00;
+  margin: 10px 0px 0px 0px;
+}
+
+.b {
+  width: calc(50% - 60px);
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+.b:hover {
+  text-decoration: underline;
+}
